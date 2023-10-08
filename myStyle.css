@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: #222222;
+  font-family: "Courier New";
+  color: azure;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#navigation div a:hover {
+  background-color: #af3333;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  justify-content: space-around;
+}
+
+div a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-around;
+  color: forestgreen;
+  font-size: 30px;
+}
+
+#main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+}
+
+.myicons{
+    height: 100px;
+    width: 100px;
+
+}
+
+.net{
+    font-size: 20px;
+}
+
+.mySong{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.artistname{
+    color: azure;
+    font-size: 1rem;
+}
+
+.art{
+    color: azure;
+}
+
+.songcard-img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+}
+.mysong-container {
+    display: flex; 
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.hover-effect{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.mysong:hover > .hover-effect{
+    display: flex;
+}
+
+.mySong:hover {
+    transform: scale(1.1);
+    transition: 1.5 ease all;
+}
+
+
